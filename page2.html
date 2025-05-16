@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>welcome to 2nd page</title>
+    </head>
+    <body>
+      <center>  <h1>CONGRATS YOU HAVE FILLED DEVELOPERS FORM NOW FILL TO SIGN UP</h1><br>
+        <STYLE>
+            H1{
+                color:blue;
+                background-color: bisque;
+            }
+        </STYLE>
+    </body>
+    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Animated Form</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 350px;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      animation: slideIn 1.2s ease forwards;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 14px 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-bottom: 2px solid #fbc2eb;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      color: #fff;
+      pointer-events: none;
+      transition: 0.3s ease;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -10px;
+      left: 5px;
+      font-size: 12px;
+      color: #fbc2eb;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0 5px;
+      border-radius: 5px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .form-footer a {
+      color: #fbc2eb;
+      text-decoration: none;
+    }
+
+    .form-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" required placeholder=" " id="name" />
+        <label for="name">Full Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" required placeholder=" " id="email" />
+        <label for="email">Email Address</label>
+      </div>
+      <div class="form-group">
+        <input type="password" required placeholder=" " id="password" />
+        <label for="password">Password</label>
+      </div>
+      <button class="submit-btn" type="submit">Create Account</button>
+    </form>
+    <div class="form-footer">
+      Already have an account? <a href="#">Log in</a>
+    </div>
+  </div>
+</body>
+</html>
+
